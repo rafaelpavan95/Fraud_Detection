@@ -43,7 +43,7 @@ with open('xgboost.pkl', 'rb') as m:
 
 
 @app.get('/')
-def index(name: str):
+def index():
     return {'message': "Rafael Pavan API."}
 
 
