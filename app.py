@@ -53,13 +53,7 @@ def get_name(name: str):
     return {'message': "This is the home page of this API. Go to /prediction to use the Machine Learning model."}
 
 
-@app.get('/{name}')
-def index(name: str):
-
-    return {'message': "This is the home page of this API. Go to /prediction to use the Machine Learning model."}
-
 @app.post('/prediction')
-
 def classify_transaction(dados: Details):
 
     received = dados.dict()
