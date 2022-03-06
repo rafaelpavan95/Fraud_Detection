@@ -41,6 +41,18 @@ app = FastAPI()
 with open('xgboost.pkl', 'rb') as m:
     model = joblib.load(m)
 
+
+@app.get('/')
+def index(name: str):
+    return {'message': "Rafael Pavan API."}
+
+
+@app.get('/{name}')
+def get_name(name: str):
+
+    return {'message': "This is the home page of this API. Go to /prediction to use the Machine Learning model."}
+
+
 @app.get('/{name}')
 def index(name: str):
 
