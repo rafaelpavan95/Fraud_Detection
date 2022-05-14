@@ -4,4 +4,5 @@ Development of an API to detect fraudulent or genuine credit card transactions. 
 
 ## API: https://model-pavan.herokuapp.com/
 
-[Notebook](https://github.com/rafaelpavan95/Fraud_Detection/blob/main/notebook.ipynb) 
+### In this [project](https://github.com/rafaelpavan95/Fraud_Detection/blob/main/notebook.ipynb) a fraud detection API was developed using XGBoost, Bayesian Optimization and FastAPI. The model was deployed on heroku.
+
